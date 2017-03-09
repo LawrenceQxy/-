@@ -3,7 +3,6 @@ let n = 0;
 let len = $('.v-show ul li').length;
 var timer = null;
 var isAnimated;
-let isPrev;
 // 右移
 $('.cust .prev').click(function () {
   if($('.v-show ul').is(":animated")) {
@@ -73,8 +72,4 @@ function addTimer () {
 }
 function removeTimer () {
   clearInterval(timer);
-  $('.v-show ul').css({
-    'left':0
-  });
-  n = 0
 }

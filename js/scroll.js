@@ -111,8 +111,14 @@ function scroll () {
 	}
 	if (m == 3) {
 		$('.teachshow').removeClass('cont-right-out').addClass('cont-right-in');
+		setTimeout(function () {
+			AddTimer();
+		},1100)
 	}else {
-		$('.teachshow').removeClass('cont-right-in').addClass('cont-right-out')
+		$('.teachshow').removeClass('cont-right-in').addClass('cont-right-out');
+		setTimeout(function () {
+			RemoveTimer();
+		},800)
 	}
 	if (m == 4) {
 		$('.news-list').addClass('news-list-in')
