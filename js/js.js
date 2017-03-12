@@ -6,6 +6,33 @@ $('#header ul li a').hover(function(){
 })
 // 规定每个屏的宽高
 $('.screen').css({'width':window.innerWidth,'height':window.innerHeight});
+$('.littlecube').get(0).isShow = false;
+window.onresize = function () {
+	$('.screen').css({'width':window.innerWidth,'height':window.innerHeight});
+	$('.bd ul li').css({'width':window.innerWidth,height:window.innerHeight});
+  height = $('.bd ul li').first().height();
+	if (window.innerWidth < 1080) {
+		$('.littlecube').css('display','block');
+		$('.littlecube').click(function () {
+			if ($('.littlecube').attr('isShow')) {
+				$('#header ul').css('right','-67px');
+				$('.littlecube').attr('isShow','false');
+			}else {
+				$('#header ul').css('right','0');
+				$('.littlecube').attr('isShow','true');
+			}
+		})
+	}
+}
+$('.littlecube').click(function () {
+	if ($('.littlecube').get(0).isShow) {
+		$('#header ul').css('right','-67px');
+		$('.littlecube').get(0).isShow = false;
+	}else{
+		$('#header ul').css('right',0);
+		$('.littlecube').get(0).isShow = true;
+	}
+})
 // 除第一屏外都要有的padding
 $('.screen:gt(1)>div').css('padding-top','67px');
 // 生成server页面内容
@@ -38,7 +65,7 @@ for (let i = 0; i < casedata.length; i++) {
 	$('.case_ul_wrap').append(
 		`<ul class="case_ul">
 				<li>
-						<a href="javascript:;">
+						<a href="anli.html">
 								<div class="show">
 										<img src="images/icons.png" alt="" />
 								</div>

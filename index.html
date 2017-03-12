@@ -8,9 +8,14 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<script src="js/html5shiv.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
-		<!-- <script src="js/jquery.SuperSlide.2.1.1.js" charset="utf-8"></script> -->
+		<!-- <script src="js/jquery.easing.min.js" charset="utf-8"></script> -->
 		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script>
+			var iScale = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+',user-scalable=no"/>');
+			var iWidth = document.documentElement.clientWidth;document.getElementsByTagName('html')[0].style.fontSize = iWidth / 192 + 'px';
+		</script> -->
 	</head>
 	<body>
 		<header id="header">
@@ -30,11 +35,63 @@
 	            <img src="images/telb.png" alt="" />
 	            <span>010-57732658</span>
 	        </div>
-	        <div class="xiangying_nav"></div>
+	        <div class="littlecube"></div>
 		</header>
+
 		<div id="container">
 			<!--第一屏-->
-			<div class="banner screen"></div>
+			<div class="banner screen">
+				<div class="mask">
+		      <div id="slideBox" class="slideBox">
+		        <div class="hd">
+		          <ul><li class="on"></li><li></li><li></li></ul>
+		        </div>
+		        <div class="bd">
+		          <ul>
+		            <li class="banner1">
+		              <div class="fangan animation3" id="a3">
+		                <hgroup>
+		                  <h3><span>Enterprise Brand Solutions</span></h3>
+		                  <h2><span>企业品牌全方位解决方案</span></h2>
+		                  <h6></h6>
+		                  <h4><span>VI设计 - LOGO设计 - 网站定制 - VI/画册设计</span></h4>
+		                  <h5><a href="anli.html">案例欣赏</a></h5>
+		                </hgroup>
+		              </div>
+		            </li>
+		            <li>
+		              <div>
+		                <div class="fengxian" id="a1">
+		                  <div>
+		                    <img src="images/fengxian.png" alt="" />
+		                    <hgroup>
+		                      <h3>零风险保证</h3>
+		                      <h2>设计--满意为止</h2>
+		                      <h4>Satisfied Web Design</h4>
+		                    </hgroup>
+		                  </div>
+		                </div>
+		              </div>
+		            </li>
+		            <li class="banner3">
+		              <div class="six" id="a2">
+		                <div>
+		                  <img src="images/six2.png" alt="" class="sixb" />
+		                  <img src="images/six1.png" alt="" class="sixa" />
+		                  <hgroup>
+		                    <h3>全方位服务<br />灵活掌握项目进程</h3>
+		                    <h2>6对1</h2>
+		                    <h4>环绕形团队 专业图文上传<br />Six To One Service &amp; Upload Data</h4>
+		                  </hgroup>
+		                </div>
+		              </div>
+									<div class="another"></div>
+		            </li>
+		          </ul>
+		        </div>
+		      </div>
+		    </div>
+			</div>
 
 
 			<!--第二屏-->
@@ -76,12 +133,14 @@
 					</div>
 					<p style="text-align:left; text-indent:2em">锋云科技（北京）有限公司成立于2009年,锋云科技网站建设经验丰富,公司专注于高品质北京网站建设,北京网站制作,企业网站建设,提供权威专业的互联网品牌网站建设与策划,鼎力为客户提供优质的建站服务。</p>
 				</div>
-				<div class="teachshow cont-right-out">
+				<div class="teachshow cont-right-out xiangying_anli">
 					<div id="teach" class="mr_frbox">
 						<img class="mr_frBtnL" src="images/prev.png">
 						<div class="mr_frUl">
-							<ul class="clearfix">
-							</ul>
+							<div class="tempWrap">
+								<ul class="clearfix">
+								</ul>
+							</div>
 						</div>
 						<img class="mr_frBtnR" src="images/next.png">
 					</div>
@@ -183,6 +242,7 @@
 	</body>
 </html>
 <script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/banner.js" charset="utf-8"></script>
 <script src="js/carousel.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/carouselT.js" charset="utf-8"></script>
 <script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>

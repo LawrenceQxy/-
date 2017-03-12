@@ -1,0 +1,49 @@
+#anliHeader{position: relative;text-align: center;}
+#anliHeader>img{width:100%;}
+#anliHeader>h2{position: absolute;top:190px;width:100%;font-size: 36px;color: #ffffff;}
+#anliHeader>h2 span{font-size: 22px;}
+#anliHeader h2{font-size:58px;z-index: 3;}
+#anliHeader h2 strong{font-size: 22px;font-weight: normal;}
+.anlihead{display: block;background: transparent;left:0;top:0;font-size: 16px;line-height:30px;height:67px;color:#fff;position: absolute;width:100%;z-index: 22;}
+.logo{position:absolute;width:230px;display: block;top: 18px;text-align: left;left: 25px;}
+.logo img{width:234px;height:24px;}
+.hotline{position:absolute;width:200px;line-height: 65px;text-align: right;right: 25px;top: 0px;}
+.hotline img{vertical-align: middle;width:28px;height:28px;}
+.hotline span{vertical-align: middle;font-size: 18px;color: #009de4;}
+.hotline span{color: #fff;}
+.news_nav_top{text-align: center;padding-top: 100px;}
+.news_nav_top a{display: inline-block; width:93px;line-height: 40px;color: #fff;font-size: 18px;border:1px solid #bababa;border-radius: 4px;margin:0 18px;}
+.news_nav_top a:hover{background:#019ee4;}
+.smask{width:100%;height:100%;background: rgba(0,0,0,0.5);position: absolute;left:0;top:0;z-index: 2}
+.casenav{position: absolute;width:100%;z-index: 3;}
+.casenav a{color: #fff;display: inline-block;width:101px;height:28px;line-height: 28px;font-size: 16px;background: #019ee4;border-radius:30px;margin:0 28px;animation:casenav 1s 0s linear;}
+@keyframes casenav{
+	0%{transform: translateY(40px);opacity: 0}
+	100%{transform: translateY(0px);opacity: 1}
+}
+.list-case-nav{bottom:180px;}
+.list-case-nav a{background: #a1a1a1;border-radius: 14px;margin:0 5px 5px;font-size: 14px;}
+.case-curr{background: #019ee4 !important;}
+/*-----------------------------------------header------------------------------------------------------------------------*/
+#container{background: #eff2f4;padding-bottom: 60px;text-align: center;}
+.scase_ul_hover{margin-top: -150px !important;position: relative;z-index: 4;width:100% !important;max-width: 100% !important;}
+.scase_ul_hover li{width:340px !important;box-sizing: border-box;margin: 0 5px 30px}
+.case ul{display: inline-block;perspective: 1000px;margin:0 10px;}
+.case ul li{display: inline-block;text-align: left;background: #fff;width:100%;}
+.case ul.case_ul li{transform:translateY(200px) translateZ(-500px) rotateX(90deg);opacity: 0;transition: transform 1s ease,opacity 1.5s ease;}
+.case ul.case_ul_hover li{perspective:100px;transform:translateY(0px) translateZ(0px) rotateX(0deg);opacity: 1;transition: transform 1s ease,opacity 1.5s ease;}
+.case ul li a{position: relative;display: block;overflow: hidden;width:340px;margin:0;}
+.case ul li a div.show{transition:all .3s ease-in-out;width:100%;height:200px;text-align: center;background: rgba(0,0,0,0.8);position: absolute;left: 0;top:0;margin-top:-100%;}
+.case ul li a>img{width:340px;height:200px;}
+.case ul li:hover div.show{margin-top:0;}
+.case ul li:hover div.show img{margin:78px auto 0;}
+.case ul li:hover div.auto div.auto_mask{margin-top:0;}
+.case ul li:hover div.auto h4{color: #fff;}
+.case ul li:hover div.auto span{color: #fff;}
+.case ul li div.auto{padding:10px 20px;position: relative; /*border-bottom: 4px solid #3f9bfb;*/font-size: 12px;}
+.case ul li div.auto div.auto_mask{transition:all .3s ease-in-out;width: 100%;height:100%;background: #3f9bfb;margin-top:100%;position: absolute;left:0;top:0;z-index: 1}
+.case ul li div.auto h4{transition:all .3s ease-in-out;font-weight: normal;font-size: 16px;color:#222;line-height: 26px;position: relative;z-index: 2}
+.case ul li div.auto span{color: #727272;transition:all .3s ease-in-out;position: relative;z-index: 2}
+/*------------------------------container-------------------------------------------*/
+.footer{height:260px;width:100%;text-align: center;color:#fff;background: #009de4}
+.footer img{margin: 80px 0 18px 0;width:195px;}

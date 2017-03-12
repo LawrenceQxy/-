@@ -2,7 +2,7 @@ var isAnimated = false;
 let m = null;
 let state = 5;
 let incr = 902;
-var timer = null;
+var timers = null;
 $('.case-top-right span').text(incr);
 //header下的点击事件
 $('#header ul li').each(function (index,ele) {
@@ -98,8 +98,8 @@ function scroll () {
 		$('.server_cont3').animate({'left':'250px','opacity':'0'},1000);
 	}
 	if (m == 2) {
-		clearInterval(timer);
-		timer = setInterval(incre,30)
+		clearInterval(timers);
+		timers = setInterval(incre,30)
 		setTimeout(function(){
 			$('.case ul').removeClass('case_ul').addClass('case_ul_hover');
 		},1000)
@@ -154,7 +154,7 @@ function incre(){
 		incr += randomNum(5,20);
 	}else{
 		incr = 1532;
-		clearInterval(timer);
+		clearInterval(timers);
 	}
 	$('.case-top-right span').text(incr);
 }
