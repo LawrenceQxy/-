@@ -24,7 +24,6 @@ $(window).scroll(function () {
         break;
     }
   }
-  console.log(num);
 })
 function createLi () {
   for (let i = 0; i < data.length; i++) {

@@ -90,8 +90,14 @@ html{
 .screen {
 	color: #fff;
 	text-align: center;
-	position: relative;
+	position: absolute;
 	overflow: hidden;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.banner{
+	opacity: 1;
 }
 .mask{
 	background: rgba(0,0,0,0.5);

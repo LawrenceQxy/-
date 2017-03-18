@@ -24,11 +24,13 @@ $('#header ul li').each(function (index,ele) {
 		$(this).children().addClass('active');
 		if (m != 2) {
 			//当container运动到位后再执行该屏的事件
-			$('#container').stop().animate({'top':-index*window.innerHeight},1000,function () {
+			$('.screen').css('opacity','0');
+			$('.screen').eq(m).stop().animate({'opacity':'1'},1000,function () {
 				scroll();
 			});
 		}else{
-			$('#container').stop().animate({'top':-index*window.innerHeight},1000);
+			$('.screen').css('opacity','0');
+			$('.screen').stop().eq(m).animate({'opacity':'1'},1000);
 			scroll();
 		}
 	})
@@ -48,8 +50,8 @@ $(document).off().mousewheel(function(event,delta) {
 			if (m > $('#container>div').length-1) {
 				m = $('#container>div').length-1;
 			}else{
-				var t = -m*window.innerHeight;
-				$('#container').animate({'top':t +'px'},1000);
+				$('.screen').css('opacity','0');
+				$('.screen').stop().eq(m).animate({'opacity':'1'},1000);
 			}
 		}
 		if(delta == 1) {
@@ -57,8 +59,8 @@ $(document).off().mousewheel(function(event,delta) {
 			if (m < 0) {
 				m = 0;
 			}else{
-				var t = -m*window.innerHeight;
-				$('#container').animate({'top':t +'px'},1000);
+				$('.screen').css('opacity','0');
+				$('.screen').stop().eq(m).animate({'opacity':'1'},1000);
 			}
 		}
 		//切换按钮状态
