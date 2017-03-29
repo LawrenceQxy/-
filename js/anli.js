@@ -29,7 +29,7 @@ function createLi () {
   for (let i = 0; i < data.length; i++) {
     $('#container ul').append(
       `<li>
-      <a href="javascript:;" title="${data[i].title}">
+      <a href="anliDetail.html" title="${data[i].title}">
           <div class="show">
               <img src="images/icons.png" alt="${data[i].title}" />
           </div>

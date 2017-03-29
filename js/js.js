@@ -80,6 +80,9 @@ for (let i = 0; i < casedata.length; i++) {
 		</ul>`
 	)
 }
+$('.case_bottom a').click(function() {
+	window.location.href = 'anli.html';
+});
 // 生成team页面内容
 for (let i = 0; i < teamdata.length; i++) {
 	$('#teach ul').append(

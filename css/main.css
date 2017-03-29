@@ -94,10 +94,10 @@ html{
 	overflow: hidden;
 	left: 0;
 	top: 0;
-	opacity: 0;
+	display: none;
 }
 .banner{
-	opacity: 1;
+	display: block;
 }
 .mask{
 	background: rgba(0,0,0,0.5);
